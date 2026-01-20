@@ -5,7 +5,6 @@
 *.swp
 
 # Backend (Go)
-backend/
 backend/backend
 backend/*.exe
 backend/*.test
