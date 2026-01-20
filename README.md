@@ -69,14 +69,3 @@ ORDER BY timestamp;
 * **Schema Management**: The backend assumes the ClickHouse table already exists; schema is provided in the repository for manual initialization.
 
 ---
-
-## Estimated Time Spent: 7 Hours
-The project followed the exact estimation provided:
-
-| Task | Time Spent |
-| :--- | :--- |
-| **Backend (Go)**: API server, ingestion, and rule logic | 2.5 Hours |
-| **Persistence**: MongoDB and ClickHouse integrations | 2.0 Hours |
-| **Frontend (Vue.js)**: Submission form and log visualization | 1.5 Hours |
-| **Documentation**: README, setup instructions, and assumptions | 1.0 Hour |
-| **Total** | **7.0 Hours** |
