@@ -3,20 +3,19 @@
 ## Project Overview
 This project is a simulation of an event-driven CRM system. It demonstrates a complete data flow where player behavior (deposits) is ingested via an API, evaluated against business rules, and persisted across two different database technologies for analytical and operational purposes.
 
+## Project Structure
+```text
 mini-crm/
-├── backend/
-│   ├── go.mod
-│   └── main.go
-├── frontend/
-│   ├── package.json
-│   ├── public/
-│   │   └── index.html
-│   └── src/
-│       ├── main.js
-│       └── App.vue
 ├── scripts/
-│   └── schema.sql
-└── README.md
+│   └── schema.sql         # ClickHouse Schema
+├── backend/
+│   ├── main.go            # API & Rule Logic
+│   ├── go.mod             # Dependencies
+│   └── go.sum             # Checksums
+└── frontend/
+    ├── src/
+    │   └── App.vue        # Vue.js UI
+    └── package.json       # JS Dependencies
 
 ### Core Business Logic
 * **Ingestion**: Backend receives a deposit event containing `player_id` and `amount`.
@@ -69,3 +68,4 @@ ORDER BY timestamp;
 * **Schema Management**: The backend assumes the ClickHouse table already exists; schema is provided in the repository for manual initialization.
 
 ---
+
