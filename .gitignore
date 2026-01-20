@@ -1,0 +1,24 @@
+# IDE/System Files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Backend (Go)
+backend/
+backend/backend
+backend/*.exe
+backend/*.test
+backend/vendor/
+
+# Frontend (Node/Vue)
+frontend/node_modules/
+frontend/dist/
+frontend/*.log
+frontend/.npm
+frontend/.env.local
+frontend/.env.*.local
+
+# Databases (If you ever use local volumes)
+*.db
+*.sqlite
